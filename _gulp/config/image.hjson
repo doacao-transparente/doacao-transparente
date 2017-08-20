@@ -1,0 +1,6 @@
+{
+	jpegtran: {
+		progressive: true,
+		arithmetic: true
+	}
+}

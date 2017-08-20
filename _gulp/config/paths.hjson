@@ -1,0 +1,64 @@
+{
+	"dist": "dist/",
+	"src": "src/",
+
+	"sass": {
+		"export": [
+			"src/app/public/css/**/*.scss",
+			"!src/app/public/css/**/_*.scss",
+		],
+		"watch": [
+			"src/app/public/css/**/*.scss"
+		],
+		"dist": "app/public/css/"
+	},
+	"css": {
+		"export": [
+			"src/app/public/css/**/*.css",
+		],
+		"watch": [
+			"src/app/public/css/**/*.css",
+		],
+		"dist": "app/public/css/"
+	},
+	"img": {
+		"export": [
+			"src/app/public/img/**/*.jpg",
+			"src/app/public/img/**/*.png",
+			"src/app/public/img/**/*.svg",
+		],
+		"dist": "app/public/img/"
+	},
+	"js": {
+        "common": {
+            "export": [
+    			"src/app/public/vendor/**/*.js",
+    		],
+            "watch": [
+                "src/app/public/vendor/**/*.js",
+            ]
+        }
+		"rollup": {
+            "export": [
+				"src/app/public/js/**/*.js",
+				"!src/app/public/js/**/_*.js",
+    		],
+            "watch": [
+                "src/app/public/js/**/*.js",
+				"!src/app/public/js/**/_*.js",
+            ]
+        },
+		"dist": "app/public/js/"
+	},
+    "vendor": "src/app/public/vendor/**/*",
+    "application": {
+        "export": [
+            "src/**/*",
+            "!src/app/public/**/*",
+        ],
+        "watch": [
+            "src/**/*",
+            "!src/app/public/**/*",
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+---
+applications:
+- name: DoacaoTransparente
+  host: doacaotransparente
+  memory: 512M
+  disk_quota: 512M
+  buildpack: sdk-for-nodejs
+  domain: mybluemix.net
+  command: npm start
+  path: .
+  env:
+    NODE_ENV: production
+    NODE_MODULES_CACHE: true
+    NPM_CONFIG_PRODUCTION: false

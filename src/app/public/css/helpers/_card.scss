@@ -1,0 +1,38 @@
+
+@mixin pledge-card() {
+    #card-row {
+        .card {
+            &.border-rounded {
+                border-radius: 15px;
+                overflow: hidden;
+            }
+        }
+        * {
+            text-decoration: none;
+        }
+    }
+    .green-bar-holder {
+        height: 12px;
+        border-radius: 10px;
+        border: 1px solid #f6f6f6;
+        box-shadow: 1px 1px 10px 0px #f6f6f6;
+        overflow: hidden;
+
+        .green-bar {
+            height: 12px;
+            background-image: url('/img/overview/green-bar.jpg');
+            background-repeat: repeat-x;
+            background-size: 100%;
+        }
+    }
+}
+
+@mixin bigger-pledge-card() {
+    .green-bar-holder {
+        height: 22px!important;
+
+        .green-bar {
+            height: 22px!important;
+        }
+    }
+}

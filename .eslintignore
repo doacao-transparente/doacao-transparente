@@ -1,0 +1,6 @@
+dist/**
+src/app/public/vendor/**
+node_modules/**
+gulpfile.js
+!_gulp/gulpfile/gulpfile.js
+docs/**

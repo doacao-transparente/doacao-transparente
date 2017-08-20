@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> _head }}
+    <title>Register</title>
+    <script src="/js/register.js"></script>
+</head>
+
+<body>
+    <header>
+        {{> _header }}
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-8 mx-auto">
+
+                    <form id="registerUser">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nos diga o seu nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pass">Senha</label>
+                            <input type="text" class="form-control" id="pass" placeholder="****">
+                        </div>
+
+                        <div class="form-group pt-2">
+                            <label>Que tal uma foto sua?</label>
+                            <br />
+                            <label class="custom-file container-fluid">
+                                <input type="file" id="file" class="custom-file-input">
+                                <span class="custom-file-control"></span>
+                            </label>
+                        </div>
+
+                        <div class="form-group pt-2">
+                            <label for="state">Estado</label>
+                            <select @change="changeCity(this.event)" class="form-control" id="state">
+                                <option v-for="state in states" :value="state.value">\{{ state.title }}</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group pt-2">
+                            <label for="cityHall">Município</label>
+                            <select class="form-control" id="cityHall">
+                                <option v-for="city in cities" :value="city.value">\{{ city.title }}</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group pt-2">
+                            <label for="personalType">Como se identifica?</label>
+                            <select class="form-control" id="personalType">
+                                <option value="cpf">CPF</option>
+                                <option value="cnpj">CNPJ</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group pt-2">
+                            <label for="cpfCnpj">Valor desejado</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control text-right" id="cpfCnpj" placeholder="E como lhe identificaremos?">
+                            </div>
+                        </div>
+
+                        <div class="text-right pt-4">
+                            <button @click="save('send')" @submit.prevent type="button" class="btn btn-success">Enviar para aprovação</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        {{> _footer }}
+    </footer>
+
+    {{> _formModal }}
+</body>
+
+</html>

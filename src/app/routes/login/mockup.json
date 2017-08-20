@@ -1,0 +1,22 @@
+{
+    "auditor": {
+        "name": "Auditor",
+        "type": "auditor",
+        "image": "/img/mockup/users/auditor.jpg"
+    },
+    "prefeitura": {
+        "name": "Prefeitura",
+        "type": "city-hall",
+        "image": "/img/mockup/users/prefeitura.jpg"
+    },
+    "doador": {
+        "name": "Doador",
+        "type": "donnor",
+        "image": "/img/mockup/users/doador.jpg"
+    },
+    "ong": {
+        "name": "ONG",
+        "type": "nog",
+        "image": "/img/mockup/users/ong.jpg"
+    }
+}

@@ -1,0 +1,15 @@
+
+button[type="submit"] {
+    font-size: 1.25rem;
+}
+
+.custom-file {
+    .custom-file-control:lang(en) {
+        &:after {
+          content: "Selecione um arquivo...";
+        }
+        &:before {
+          content: "Navegar";
+        }
+    }
+}

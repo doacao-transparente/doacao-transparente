@@ -1,0 +1,23 @@
+{
+	"rollup": {
+		babel: {
+			presets: [
+				["latest", {
+					es2015: {
+						modules: false
+					}
+				}]
+			],
+			plugins: [
+				"external-helpers"
+			]
+		}
+	},
+	"application": {
+		babel: {
+			"presets": [
+				["babili"]
+			]
+		}
+	}
+}

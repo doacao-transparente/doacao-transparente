@@ -1,0 +1,95 @@
+@import 'helpers/fonts';
+@import 'helpers/colors';
+@import 'helpers/card';
+
+header {
+    height: 100px;
+    background-color:#457c93;
+
+    .hover-area,
+    .row {
+        height: 100px;
+    }
+
+    .hover-area {
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+
+        .hidden-menu {
+            display: none;
+            position: absolute;
+            top: 100px;
+            right: 0px;
+            width: 100%;
+            padding: 0px;
+            z-index: 28;
+
+            ul {
+                padding: 0px;
+                margin: 0px;
+                background-color:#457c93;
+
+                li {
+                    text-align: right;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    padding-right: 20px;
+                    color: #ececec;
+                    background-color:#457c93;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color:#275d73;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            background-color: #6497ad;
+
+            .hidden-menu {
+                display: block !important;
+            }
+        }
+        & * {
+            display: block;
+            text-decoration: none;
+        }
+    }
+
+    #user-image {
+        border: 1px solid #232323;
+    }
+
+    .d-flex {
+        & > p {
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        & > a,
+        & > img {
+            margin:auto
+        }
+    }
+    img {
+        max-height: 70px;
+    }
+}
+main {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: #eef7fa;
+
+    @include pledge-card();
+}
+
+footer {
+    background-color: #123b4e;
+}
+
+.bd-red {
+    border-color: red;
+}

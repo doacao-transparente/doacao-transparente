@@ -1,0 +1,12 @@
+@import 'helpers/card';
+
+main {
+    @include bigger-pledge-card();
+
+    .btn {
+        &.font-h4 {
+            font-size: 1.25rem !important;
+        	line-height: 1.5625rem !important;
+        }
+    }
+}

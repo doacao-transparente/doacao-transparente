@@ -1,0 +1,75 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-11 mx-auto">
+            <div class="row">
+                <div class="col-1 d-flex">
+                    <a href="/" target="_self">
+                        <img src="/img/shared/header/logo.png" class="img-fluid align-middle">
+                    </a>
+                </div>
+
+                <div class="col-8">
+                </div>
+
+                {{#if userData }}
+                <div class="col-3">
+                    <a class="row mx-0 px-0 hover-area">
+                        <div class="col-8 d-flex mx-0 px-0">
+                            <p id="user-name" class="text-white font-h3 text-right">
+                                {{ userData.name}}
+                            </p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <img id="user-image" src="{{ userData.image}}" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="hidden-menu">
+                            <ul>
+                                {{#if (compare userData.type 'auditor') }}
+                                <li onclick="window.location.href='/'">Projetos</li>
+                                {{else}}
+                                <li onclick="window.location.href='/dashboard'">
+                                    {{#if (compare userData.type 'donnor') }}
+                                    Projetos que ajudei
+                                    {{else}}
+                                    Meus projetos
+                                    {{/if}}
+                                </li>
+                                {{/if}}
+
+                                {{#if (compare userData.type 'nog') }}
+                                <li onclick="window.location.href='/project/create'">Cadastrar projeto</li>
+                                {{/if}}
+
+                                {{#if (compare userData.type 'auditor') }}
+                                {{else}}
+                                    {{#if (compare userData.type 'donnor') }}
+                                    {{else}}
+                                <li onclick="window.location.href='/'">Outros projetos</li>
+                                    {{/if}}
+                                {{/if}}
+                                <li onclick="window.location.href='/logout'">Sair</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                {{ else }}
+                <div class="col-3 d-flex">
+                    <div class="row mx-0 px-0">
+                        <a href="/register" target="_self" class="col-8 d-flex hover-area">
+                            <p class="text-white font-h3 text-right">
+                                Cadastre-se
+                            </p>
+                        </a>
+                        <a href="/login" target="_self" class=" col-4 d-flex hover-area">
+                            <p class="text-white font-h3 text-right">
+                                Login
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                {{/if }}
+
+            </div>
+        </div>
+    </div>
+</div>

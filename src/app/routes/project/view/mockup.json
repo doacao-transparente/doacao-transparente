@@ -1,0 +1,122 @@
+[
+    {
+        "id": "01",
+        "image": "/img/mockup/cards/churras.jpg",
+        "name": "Projeto Aprovado 01",
+        "owner": "Eye",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at congue tellus, vitae pulvinar purus. Curabitur vestibulum vehicula dapibus. Suspendisse ut eleifend sem. Cras maximus ac tortor in finibus.",
+        "pledged": "150000",
+        "collected": "50000",
+        "backers": "130",
+        "endDate": "13",
+        "status": "approved",
+        "NGO": {
+            "idNgo": 1,
+            "NgoName": "International Central of Education"
+        },
+        "Prefecture": {
+            "idPrefecture": "2",
+            "prefectureName": "Prefecture of Pernambuco"
+        }
+    },
+    {
+        "id": "02",
+        "image": "/img/mockup/cards/criancas.jpg",
+        "name": "Projeto Rascunho 02",
+        "owner": "Bee",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at congue tellus, vitae pulvinar purus. Curabitur vestibulum vehicula dapibus. Suspendisse ut eleifend sem. Cras maximus ac tortor in finibus.",
+        "pledged": "70000",
+        "collected": "60000",
+        "backers": "70",
+        "endDate": "3",
+        "status": "draft",
+        "NGO": {
+            "idNgo": 1,
+            "NgoName": "International Central of Education"
+        },
+        "Prefecture": {
+            "idPrefecture": "2",
+            "prefectureName": "Prefecture of Pernambuco"
+        }
+    },
+    {
+        "id": "03",
+        "image": "/img/mockup/cards/lab-info.jpg",
+        "name": "Projeto Rascunho 03",
+        "owner": "Emm",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at congue tellus, vitae pulvinar purus. Curabitur vestibulum vehicula dapibus. Suspendisse ut eleifend sem. Cras maximus ac tortor in finibus.",
+        "pledged": "10000",
+        "collected": "10000",
+        "backers": "1",
+        "endDate": "2",
+        "status": "draft",
+        "NGO": {
+            "idNgo": 1,
+            "NgoName": "International Central of Education"
+        },
+        "Prefecture": {
+            "idPrefecture": "2",
+            "prefectureName": "Prefecture of Pernambuco"
+        }
+    },
+    {
+        "id": "04",
+        "image": "/img/mockup/cards/churras.jpg",
+        "name": "Projeto Aprovado 04",
+        "owner": "Eye",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at congue tellus, vitae pulvinar purus. Curabitur vestibulum vehicula dapibus. Suspendisse ut eleifend sem. Cras maximus ac tortor in finibus.",
+        "pledged": "150000",
+        "collected": "50000",
+        "backers": "130",
+        "endDate": "13",
+        "status": "approved",
+        "NGO": {
+            "idNgo": 1,
+            "NgoName": "International Central of Education"
+        },
+        "Prefecture": {
+            "idPrefecture": "2",
+            "prefectureName": "Prefecture of Pernambuco"
+        }
+    },
+    {
+        "id": "05",
+        "image": "/img/mockup/cards/criancas.jpg",
+        "name": "Projeto Rejeitado 05",
+        "owner": "Bee",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at congue tellus, vitae pulvinar purus. Curabitur vestibulum vehicula dapibus. Suspendisse ut eleifend sem. Cras maximus ac tortor in finibus.",
+        "pledged": "70000",
+        "collected": "60000",
+        "backers": "70",
+        "endDate": "3",
+        "status": "rejected",
+        "NGO": {
+            "idNgo": 1,
+            "NgoName": "International Central of Education"
+        },
+        "Prefecture": {
+            "idPrefecture": "2",
+            "prefectureName": "Prefecture of Pernambuco"
+        }
+    },
+    {
+        "id": "06",
+        "image": "/img/mockup/cards/lab-info.jpg",
+        "name": "Projeto Rascunho 06",
+        "owner": "Emm",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at congue tellus, vitae pulvinar purus. Curabitur vestibulum vehicula dapibus. Suspendisse ut eleifend sem. Cras maximus ac tortor in finibus.",
+        "pledged": "10000",
+        "collected": "10000",
+        "backers": "1",
+        "endDate": "2",
+        "status": "payed",
+        "NGO": {
+            "idNgo": 1,
+            "NgoName": "International Central of Education"
+        },
+        "Prefecture": {
+            "idPrefecture": "2",
+            "prefectureName": "Prefecture of Pernambuco"
+        }
+    }
+]

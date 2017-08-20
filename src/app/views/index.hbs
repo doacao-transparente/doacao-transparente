@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> _head }}
+
+    <title>Home</title>
+    <script src="/js/overview.js"></script>
+</head>
+
+<body>
+    <header>
+        {{> _header }}
+    </header>
+    <main>
+        {{!
+        <div class="container">
+            <div class="row">
+                <div class="col-12 rounded bg-white">
+                    <div class="fluid-container x-left-0 x-right-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        }}
+
+        <div class="container">
+            <div id="card-row" class="row">
+                <div v-for="card in cards" class="col-4">
+                    <a :href="`/project/view/${card.id}`">
+                        <div class="card bg-white border-rounded mb-4">
+                            <img class="card-img-top" :src="card.image" :alt="card.name">
+                            <div class="card-block px-3 py-3">
+                                <p class="card-title text-grey-23 font-h3 mb-2">\{{ card.name }}</p>
+                                <p class="card-subtitle text-grey-5e pb3 mb-3">~ by \{{ card.owner }}</p>
+                                <p class="card-text text-grey-23 pb-3">\{{ card.description }}</p>
+
+                                {{! Green bar }}
+                                <p class="text-center text-grey-23 mb-0 pb-1">
+                                    \{{ Math.ceil(card.collected / (card.pledged / 100)) }}%
+                                </p>
+
+                                <div class="green-bar-holder mb-2">
+                                    <div class="green-bar" :style="getComputedStyle(Math.ceil(card.collected / (card.pledged / 100)))">
+                                    </div>
+                                </div>
+
+                                <p class="card-text text-grey-23 mb-4 pb-4">
+                                    <span class="float-left">\{{ card.backers }} \{{ card.backers > 1 ? 'Doadores' : 'Doador' }}</span>
+                                    <span class="float-right">R$ \{{ card.pledged }},00</span>
+                                </p>
+
+                                {{! X Days to go }}
+                                <p class="card-text text-grey-23 font-h4 text-right mb-0">\{{ card.endDate }}</p>
+                                <p class="card-text text-grey-23 font-small text-right">Days to go</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        {{> _footer }}
+    </footer>
+</body>
+
+</html>
